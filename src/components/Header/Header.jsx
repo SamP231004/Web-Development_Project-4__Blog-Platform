@@ -42,9 +42,9 @@ function Header() {
             <Container>
                 <nav className='HomeButtonNav'>
                     <div className='Contact'>
-                        <a href="https://samp231004.github.io/Portfolio/" target='_blank'><img src="src/Images_Used/image_12.png" alt="" /></a>
-                        <a href="https://www.linkedin.com/in/samp2310/" target='_blank'><img src="src/Images_Used/image_11.png" alt="" /></a>
-                        <a href="https://github.com/SamP231004" target='_blank'><img src="src/Images_Used/image_13.png" alt="" /></a>
+                        <a href="https://samp231004.github.io/Portfolio/" target='_blank'><img src="/images/image_12.png" alt="" /></a>
+                        <a href="https://www.linkedin.com/in/samp2310/" target='_blank'><img src="/images/image_11.png" alt="" /></a>
+                        <a href="https://github.com/SamP231004" target='_blank'><img src="/images/image_13.png" alt="" /></a>
                     </div>
                     <ul className='HomeButtonUl'>
                         {navItems.map((item) =>
