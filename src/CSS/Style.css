@@ -561,6 +561,13 @@ body::-webkit-scrollbar-thumb {
     .formContainer {
         align-items: normal;
     }
+    .PostCard {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .PostCard img {
+        width: 60vw;
+    }
     .PostContainer {
         margin: 0 1%;
         flex-direction: column;
