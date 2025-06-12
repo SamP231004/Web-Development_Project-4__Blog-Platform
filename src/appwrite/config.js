@@ -137,6 +137,13 @@ export class Service{
             fileId
         )
     }
+
+    getFileView(fileId) {
+        return this.bucket.getFileView(
+            conf.appwriteBucketID,
+            fileId
+        ).href;
+    }
 }
 
 

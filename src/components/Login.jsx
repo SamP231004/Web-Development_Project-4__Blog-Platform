@@ -36,20 +36,22 @@ function Login() {
                 <h2>Sign in to your account</h2>
                 
                 <form onSubmit={handleSubmit(login)}>
-                    <div  className='SigninContainerInput'>
+                    <div className='SigninContainerInput'>
                         <Input
                             label="Email: "
-                            // placeholder="Enter your email"
                             type="email"
+                            defaultValue="one@one.com"
                             {...register("email", {
                                 required: "Email is required",
-                                validate: value => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) || "Invalid email address",
+                                validate: value =>
+                                    /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) || "Invalid email address",
                             })}
                         />
+
                         <Input
                             label="Password: "
                             type="password"
-                            // placeholder="Enter your password"
+                            defaultValue="one@one.com"
                             {...register("password", { required: "Password is required" })}
                         />
                         <Button className="SigninContainerButton" type="submit">Sign in</Button>
